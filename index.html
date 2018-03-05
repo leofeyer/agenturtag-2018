@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank">
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/contao.svg" alt></aside>
+    <hgroup class="auto-fadein">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+    </hgroup>
+  </slide>
+
+  <!--  ########## AGENDA ##########  -->
+
+  <slide class="title-slide logoslide nobackground">
+    <article class="flexbox vcenter">
+      <p>Contao in Zahlen | Entwicklertreffen | Deployer Edition</p>
+    </article>
+  </slide>
+
+  <!--  ########## ZAHLEN ##########  -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/contao.svg" alt></aside>
+    <hgroup class="auto-fadein">
+      <h2>Contao in Zahlen</h2>
+      <h3>Aktuelle Kennziffern rund um Contao</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Downloads</h2>
+    </hgroup>
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th>Stichtag</th>
+            <th>Downloads</th>
+            <th>Veränderung</th>
+            <th>Zeitraum</th>
+            <th>Pro Tag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>26.02.2018</td>
+            <td>1.415.542</td>
+            <td>+ 110.307</td>
+            <td>265 Tage</td>
+            <td>416</td>
+          </tr>
+          <tr>
+            <td>07.06.2017</td>
+            <td>1.305.235</td>
+            <td>+ 31.015</td>
+            <td>93 Tage</td>
+            <td>333</td>
+          </tr>
+          <tr>
+            <td>07.03.2017</td>
+            <td>1.274.220<sup>1)</sup></td>
+            <td>+ 83.891<sup>2)</sup></td>
+            <td>302 Tage</td>
+            <td>278</td>
+          </tr>
+          <tr>
+            <td>10.05.2016</td>
+            <td>1.144.765</td>
+            <td>+ 28.881</td>
+            <td>92 Tage</td>
+            <td>314</td>
+          </tr>
+          <tr>
+            <td>09.02.2016</td>
+            <td>1.115.884</td>
+            <td>+ 77.835</td>
+            <td>268 Tage</td>
+            <td>290</td>
+          </tr>
+          <tr>
+            <td>18.05.2015</td>
+            <td>1.038.049</td>
+            <td>+ 77.114</td>
+            <td>250 Tage</td>
+            <td>308</td>
+          </tr>
+          <tr>
+            <td>11.09.2014</td>
+            <td>960.935</td>
+            <td>+ 17.146</td>
+            <td>47 Tage</td>
+            <td>365</td>
+          </tr>
+          <tr>
+            <td>21.07.2014</td>
+            <td>943.789</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="footnote">1) Enthält erstmals auch die Git-Installs (29.795 <code>contao/core</code> und
+        15.769 <code>contao/core-bundle</code>).<br>2) Die Git-Installs wurden bei der Veränderung nicht
+        berücksichtig.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Marktanteil</h2>
+    </hgroup>
+    <article>
+      <p>Contao liegt bei <a href="http://www.cmscrawler.com/">CMSCrawler</a> auf Platz 12 von 834 Systemen.</p>
+      <h3>Marktanteile</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Land</th>
+            <th colspan="3">Marktanteil</th>
+            <th colspan="3">TOP 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="http://www.cmscrawler.com/country/DE">Deutschland</a></td>
+            <td>3,99%</td>
+            <td><span class="red">-0,01%</span></td>
+            <td>Platz 4</td>
+            <td>Wordpress<br>TYPO3<br>Joomla!</td>
+            <td>46,32%<br>13,23%<br>11,42%</td>
+            <td><span class="green">+1,74%</span><br><span class="red">-0,63%</span><br><span class="green">+0,36%</span></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.cmscrawler.com/country/CH">Schweiz</a></td>
+            <td>3,18%</td>
+            <td><span class="red">-0,03%</span></td>
+            <td>Platz 6</td>
+            <td>Wordpress<br>TYPO3<br>Joomla!</td>
+            <td>39,32%<br>11,69%<br>11,52%</td>
+            <td><span class="green">+2,18%</span><br><span class="red">-0,89%</span><br><span class="green">+0,56%</span></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.cmscrawler.com/country/AT">Österreich</a></td>
+            <td>4,23%</td>
+            <td><span class="red">-0,03%</span></td>
+            <td>Platz 4</td>
+            <td>Wordpress<br>TYPO3<br>Joomla!</td>
+            <td>38,16%<br>20,92%<br>12,15%</td>
+            <td><span class="green">+1,90%</span><br><span class="red">-1,10%</span><br><span class="green">+0,47%</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </slide>
+
+  <!--  ########## ENTWICKLERTREFFEN ##########  -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/contao.svg" alt></aside>
+    <hgroup class="auto-fadein">
+      <h2>Entwicklertreffen</h2>
+      <h3>News vom ersten Entwicklertreffen 2018</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Contao LTS</h2>
+    </hgroup>
+    <article>
+      <p>Wir haben uns dazu entschlossen, die Release-Termine auf Februar und August zu verschieben, da der Abstand
+        zwischen den Entwicklertreffen im Februar und September und den Releases im Juni und Dezember zu kurz ist.</p>
+      <h3>Release-Termine</h3>
+      <ul>
+        <li>Nächstes Release: Contao 4.6 (August 2018)</li>
+        <li>Nächstes LTS-Release: Contao 4.9 (Februar 2020)</li>
+        <li>Contao 4.9 LTS wird auf Symfony 4.4 LTS basieren</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <img src="images/release-plan.png" width="1280" height="645" alt>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Symfony 4</h2>
+    </hgroup>
+    <article>
+      <p>Unser Ziel ist, dass Contao 4.6 mit Symfony 4 kompatibel ist.</p>
+      <h3>Herausforderung</h3>
+      <ul>
+        <li>Veraltete Methoden und Services nicht mehr verwenden</li>
+        <li>Alle Services sind standardmäßig <code>private</code> in Symfony 4, wir sind aber auf die Nutzung von
+          <code>System::getContainer()->get()</code> angewiesen</li>
+      </ul>
+      <p>Wahrscheinlichkeit der Umsetzung: 80%</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>HTTP-Cache</h2>
+    </hgroup>
+    <article>
+      <p>Aufgrund verschiedener Änderungen in Symfony funktioniert der HTTP-Cache in Contao 4.4 und 4.5 nur noch unter
+        bestimmten Voraussetzungen. Unser Ziel ist es, eine Lösung zu finden und zu implementieren, damit der HTTP-Cache
+        wieder für alle nutzbar ist.</p>
+      <h3>Herausforderung</h3>
+      <ul>
+        <li>Caching ist ein komplexes Thema</li>
+        <li>Wir halten die Änderungen in Symfony grundsätzlich für richtig</li>
+        <li>Da das Session- und Cache-Handling in Contao auf anderen Prämissen basiert, müssen wir die Änderungen, die
+          Symfony an der Response vornimmt, teilweise wieder rückgängig machen</li>
+      </ul>
+      <p>Wahrscheinlichkeit der Umsetzung: 100%</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Zwei-Faktor-Authentifizierung</h2>
+    </hgroup>
+    <article>
+      <p>Unser Ziel ist es, die Backend-Anmeldung optional mittels Zwei-Faktor-Authentifizierung abzusichern. Dabei
+        möchten wir den TOTP-Standard (Time-based One-time Password) implementieren, der von allen gängigen Apps wie
+        z.B. 1password oder Google Authenticator unterstützt wird.</p>
+      <h3>Herausforderung</h3>
+      <ul>
+        <li>Kein Bundle erfüllt alle unsere Ansprüche</li>
+        <li>Noch keine Einigkeit bezüglich der Integration in die Symfony-Firewall</li>
+      </ul>
+      <p>Wahrscheinlichkeit der Umsetzung: 20%</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Drag and Drop</h2>
+    </hgroup>
+    <article>
+      <p>Unser Ziel ist es, den Tree View im Backend vollständig per Drag and Drop bedienbar zu machen.</p>
+      <h3>Herausforderung</h3>
+      <ul>
+        <li>Das Contao-Markup passt nicht zu den gängigen Drag and Drop-Skripten</li>
+        <li>Die Abbildung der Contao-Benutzerrechte in einem Drag and Drop-Skript ist aufwändig</li>
+        <li>Zur Drag and Drop-Bedienung gehört z.B. auch, dass sich Knoten automatisch öffnen, wenn man während des
+          Drag-Vorgangs mit der Maus darüber fährt</li>
+      </ul>
+      <p>Wahrscheinlichkeit der Umsetzung: Dateimanager 100%, Seiten/Artikel 0%</p>
+    </article>
+  </slide>
+
+  <slide class="title-slide logoslide nobackground">
+    <article class="flexbox vcenter">
+      <p>Dateien per Drag and Drop hochladen</p>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <video src="videos/file-manager-1.mp4" width="1280" height="720" preload="none"></video>
+    </article>
+  </slide>
+
+  <slide class="title-slide logoslide nobackground">
+    <article class="flexbox vcenter">
+      <p>Ordner per Drag and Drop hochladen</p>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <video src="videos/file-manager-2.mp4" width="1280" height="720" preload="none"></video>
+    </article>
+  </slide>
+
+  <slide class="title-slide logoslide nobackground">
+    <article class="flexbox vcenter">
+      <p>Dateien und Ordner per Drag and Drop verschieben</p>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <video src="videos/file-manager-3.mp4" width="1280" height="720" preload="none"></video>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Contao Manager</h2>
+    </hgroup>
+    <article>
+      <p>Unser Ziel ist es, die Berechnung der Abhängigkeiten in Composer in einen Cloud-Service auszulagern, damit
+        der Contao Manager weniger RAM benötigt.</p>
+      <h3>Herausforderung</h3>
+      <ul>
+        <li>Entwicklung des Cloud-Services</li>
+        <li>Anbindung des Contao Manager an den Cloud-Service</li>
+      </ul>
+      <p>Erste Tests des Contao Managers in Verbindung mit dem Cloud-Service, die wir während des Entwicklertreffens
+        durchgeführt haben, waren erfolgreich.</p>
+      <p>Wahrscheinlichkeit der Umsetzung: 95%</p>
+    </article>
+  </slide>
+
+  <!--  ########## CONTAO DEPLOYER EDITION ##########  -->
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/contao.svg" alt></aside>
+    <hgroup class="auto-fadein">
+      <h2>Contao Deployer Edition</h2>
+      <h3>Webseiten lokal entwickeln und mittels Deployer ausliefern</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Deployment</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Nutzung der lokalen Debug-Tools möglich</li>
+        <li>Deployment auf mehrere Targets (z.B. Staging und Live)</li>
+        <li>Rollback zu vorherigen Versionen möglich</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <img src="images/deployer.png" width="1280" height="720" alt>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Deployer</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Zero Downtime Releases</li>
+        <li>Konfiguration in einer einzigen Datei</li>
+        <li>Kann mehrere Tasks parallel ausführen</li>
+        <li>Unterstützt beliebige eigene Tasks</li>
+        <li>Funktioniert mit jedem SSH-Zugang (kein serverseitiger Dienst notwendig)</li>
+        <li>Unterstützt alle gängingen PHP-Frameworks inklusive Symfony</li>
+        <li>Weitere Informationen: <a href="https://deployer.org" target="_blank">deployer.org</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Deployer Edition</h2>
+    </hgroup>
+    <article>
+      <p><a href="https://github.com/contao/deployer-edition" target="_blank">https://github.com/contao/deployer-edition</a></p>
+      <h3>Features</h3>
+      <ul>
+        <li>Basiert auf der Managed Edition</li>
+        <li>Lädt zusätzlich das Paket <code>deployer/deployer</code></li>
+        <li>Enthält zusätzlich die Datei <code>deploy.php</code></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill video nobackground">
+    <article class="centered with-image">
+      <img src="images/deploy_php.png" width="1280" height="720" alt>
+    </article>
+  </slide>
+
+  <slide class="title-slide logoslide nobackground">
+    <article class="flexbox vcenter">
+      <p>Noch Fragen?</p>
+    </article>
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/contao.svg" alt></aside>
+    <article class="flexbox vleft auto-fadein">
+      <p>Vielen Dank für die Aufmerksamkeit</p>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+  var slides = document.getElementsByTagName('slide');
+
+  window.addEventListener('slideenter', function(e) {
+    var idx = parseInt(e.slideNumber) - 1,
+        slide = slides[idx], video;
+    if (!slide) return;
+    video = slide.getElementsByTagName('video')[0];
+    if (typeof video == 'undefined') return;
+    if (video.played.length) video.currentTime = 0;
+    video.play();
+  });
+
+  window.addEventListener('slideleave', function(e) {
+    var idx = parseInt(e.slideNumber) - 1,
+        slide = slides[idx], video;
+    if (!slide) return;
+    video = slide.getElementsByTagName('video')[0];
+    if (typeof video == 'undefined') return;
+    video.pause();
+  });
+
+  window.addEventListener('keypress', function(e) {
+    if (e.keyCode != 46) return;
+    var idx = parseInt(document.location.hash.substr(1)) - 1 || 0,
+        slide = slides[idx], video;
+    if (!slide) return;
+    video = slide.getElementsByTagName('video')[0];
+    if (typeof video == 'undefined') return;
+    if (video.ended) video.currentTime = 0;
+    video.paused ? video.play() : video.pause();
+  });
+</script>
+
+</body>
+</html>
